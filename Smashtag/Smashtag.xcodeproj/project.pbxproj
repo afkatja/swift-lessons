@@ -15,6 +15,7 @@
 		946C6B3A1D56703500529640 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946C6B391D56703500529640 /* Twitter.framework */; };
 		946C6B3B1D56703500529640 /* Twitter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 946C6B391D56703500529640 /* Twitter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		946C6B3E1D56774B00529640 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946C6B3D1D56774B00529640 /* TweetCell.swift */; };
+		946C6B401D57CB7500529640 /* TweetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946C6B3F1D57CB7500529640 /* TweetDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,7 @@
 		946C6AEF1D56661000529640 /* TweetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewController.swift; sourceTree = "<group>"; };
 		946C6B391D56703500529640 /* Twitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Twitter.framework; path = "/Users/katjahollaar/Library/Developer/Xcode/DerivedData/TwitterClient-ebnhrtczxeknmoavrcljrrrrroqs/Build/Products/Debug-iphoneos/Twitter.framework"; sourceTree = "<absolute>"; };
 		946C6B3D1D56774B00529640 /* TweetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
+		946C6B3F1D57CB7500529640 /* TweetDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				946C6AE01D56654300529640 /* Main.storyboard */,
 				946C6B3D1D56774B00529640 /* TweetCell.swift */,
 				946C6AEE1D56657000529640 /* Utils */,
+				946C6B3F1D57CB7500529640 /* TweetDetailViewController.swift */,
 			);
 			path = Smashtag;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				946C6B3E1D56774B00529640 /* TweetCell.swift in Sources */,
+				946C6B401D57CB7500529640 /* TweetDetailViewController.swift in Sources */,
 				946C6AF01D56661000529640 /* TweetTableViewController.swift in Sources */,
 				946C6ADD1D56654300529640 /* AppDelegate.swift in Sources */,
 			);

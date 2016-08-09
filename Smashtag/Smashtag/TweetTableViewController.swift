@@ -76,9 +76,9 @@ class TweetTableViewController: UITableViewController, UITextFieldDelegate {
         return tweets.count
     }
 
-  override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+  /*override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
     return "\(tweets.count - section)"
-  }
+  }*/
 
   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
       return tweets[section].count
@@ -91,8 +91,7 @@ class TweetTableViewController: UITableViewController, UITextFieldDelegate {
     if let tweetCell = cell as? TweetCell {
       tweetCell.tweet = tweet
     }
-
-      return cell
+    return cell
   }
 
   @IBOutlet weak var searchFieldText: UITextField! {
@@ -113,11 +112,13 @@ class TweetTableViewController: UITableViewController, UITextFieldDelegate {
 
   // In a storyboard-based application, you will often want to do a little preparation before navigation
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    if let destination = segue.destinationViewController as? TweetDetailViewController {
-      // Pass the selected object to the new view controller.
-      if let selectedRow = tableView.indexPathForSelectedRow {
-        destination.tweet = tweets[selectedRow.section][selectedRow.row]
+    if segue.identifier == "ShowDetail" {
+      // Get the new view controller using segue.destinationViewController.
+      if let destination = segue.destinationViewController as? TweetDetailViewController {
+        // Pass the selected object to the new view controller.
+        if let selectedRow = tableView.indexPathForSelectedRow {
+          destination.tweetDetail = tweets[selectedRow.section][selectedRow.row]
+        }
       }
     }
   }

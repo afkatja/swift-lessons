@@ -81,6 +81,7 @@
                                     <outlet property="TweetText" destination="8m0-VJ-VlQ" id="1Hg-Ea-R84"/>
                                     <outlet property="UserAvatar" destination="P8B-bV-bso" id="4na-LL-meE"/>
                                     <outlet property="UserName" destination="d5W-vf-hnQ" id="nth-zY-Xcq"/>
+                                    <segue destination="8Ya-vf-Vd2" kind="show" identifier="ShowDetail" id="ySE-c5-cgT"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -97,6 +98,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0aa-MZ-aRC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1304" y="259"/>
+        </scene>
+        <!--Tweet Detail View Controller-->
+        <scene sceneID="U6N-ur-nAb">
+            <objects>
+                <tableViewController id="8Ya-vf-Vd2" customClass="TweetDetailViewController" customModule="Smashtag" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="U1m-Tq-FXT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="5P1-ZJ-VE7">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5P1-ZJ-VE7" id="MeP-o0-ayd">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="8Ya-vf-Vd2" id="jaS-zy-iyp"/>
+                            <outlet property="delegate" destination="8Ya-vf-Vd2" id="Bxm-FS-nIb"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="tch-t6-y91"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mp1-bg-gxD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2101" y="259"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="o5c-IO-M1c">

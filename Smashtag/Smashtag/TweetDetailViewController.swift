@@ -14,6 +14,13 @@ class TweetDetailViewController: UITableViewController {
     didSet {
       //set the properties, like user name, image etc
       print("tweet detail \(tweetDetail)")
+      if let detail = tweetDetail {
+        let user = detail.user
+        title = user.name
+        if detail.media.count > 0 {
+          
+        }
+      }
     }
   }
 
